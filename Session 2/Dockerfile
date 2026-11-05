@@ -3,7 +3,7 @@ WORKDIR /build
 COPY murach/ ./murach/
 RUN mkdir -p classes && javac --release 17 -encoding UTF-8 \
     -cp /usr/local/tomcat/lib/servlet-api.jar -d classes \
-    murach/business/User.java murach/email/EmailListServlet.java
+    murach/business/User.java murach/data/UserDB.java murach/email/EmailListServlet.java
 
 FROM tomcat:11.0-jdk17-temurin
 COPY --from=build /build/classes/ /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/
