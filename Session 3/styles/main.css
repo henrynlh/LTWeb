@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h1 {
+    color: teal;
+}
+h2 {
+    color: teal;
+}
+label {
+    font-weight: bold;
+    float: left;
+    margin-bottom: 0.5em;
+}
+.survey-page label {
+    width: 8em;
+}
+.thank-page label {
+    width: 22em;
+    white-space: nowrap;
+}
+.survey-page input[type="text"],
+.survey-page input[type="email"],
+.survey-page input[type="date"],
+select[name="contactMethod"]  {
+    font-size: inherit;
+    box-sizing: border-box;
+    width: 15em;
+    height: 2em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.survey-page input[type = "submit"],
+.thank-page input[type = "submit"] {
+    font-size: inherit;
+    box-sizing: border-box;
+    width: 5em;
+    height: 2em;
+    margin-bottom: 0.5em;
+}
+br {
+    clear: both;
+}

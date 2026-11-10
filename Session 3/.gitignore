@@ -1,0 +1,5 @@
+WEB-INF/classes/
+*.class
+.env
+.env.*
+/data/

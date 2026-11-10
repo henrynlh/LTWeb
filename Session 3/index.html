@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/main.css" type ="text/css"/>
+</head>
+<body class="survey-page">
+    <img src="images/logo.png" alt="Murach Logo" width="150" height="150">
+
+    <h1>Survey</h1>
+    <p>If you have a moment, we'd appriciate it if you would fill out this survey.</p>
+
+    <h2>Your Information:</h2>
+    <form action="emailList" method="post">
+        <input type="hidden" name="action" value="add">
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label>First Name:</label>
+        <input type="text" name="firstName" required><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="birthDate" required><br>
+
+        <h2>How did you hear about us?</h2>
+        <input type="radio" name="hearAboutUs" value="searchEngine" required> Search Engine
+        <input type="radio" name="hearAboutUs" value="wordOfMouth"> Work of mouth
+        <input type="radio" name="hearAboutUs" value="socialMedia"> Social Media
+        <input type="radio" name="hearAboutUs" value="other"> Other<br>
+
+        <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+        <input type="checkbox" name="receiveAnnouncements" value="offers"> YES, I'd like that. <br>
+        <input type="checkbox" name="receiveAnnouncements" value="email"> YES, please send me email announcements. <br>
+
+        <p>Please contact me by:
+            <select name="contactMethod">
+                <option value="emailOrPostalMail">Email or Postal Mail</option>
+                <option value="emailOnly">Email Only</option>
+                <option value="postalMailOnly">Postal Mail Only</option>
+            </select>
+        </p>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
