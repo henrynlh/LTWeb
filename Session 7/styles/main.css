@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 1.5em 2em;
+    color: #111;
+    background: beige;
+}
+h1 {
+    font-size: 1.5em;
+    color: crimson;
+    margin: 0 0 0.55em;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #111;
+    padding: 0.7em 0.5em;
+    text-align: left;
+    vertical-align: middle;
+}
+th {
+    font-weight: bold;
+}
+.catalog th:first-child {
+    width: 65%;
+}
+.catalog th:nth-child(2) {
+    width: 13%;
+}
+.number {
+    text-align: center;
+    white-space: nowrap;
+}
+.actions {
+    white-space: nowrap;
+    text-align: center;
+}
+form {
+    margin: 0;
+}
+input[type="submit"] {
+    font: inherit;
+    background-color: aliceblue;
+    padding: 0.15em 0.55em;
+    cursor: pointer;
+}
+a:focus-visible, input:focus-visible {
+    outline: 2px solid teal;
+    outline-offset: 2px;
+}
+.quantity-form {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+input[type="number"] {
+    width: 3.5em;
+    font: inherit;
+    padding: 0.15em;
+}
+.navigation {
+    margin-top: 0.4em;
+}
+.message {
+    color: #a1261d;
+}
+.table-scroll {
+    overflow-x: auto;
+}
+.sr-only {
+    text-align: center;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+@media (max-width: 600px) {
+    body {
+        margin: 1.2em 1em;
+    }
+    th, td {
+        padding: 0.6em;
+    }
+}
+.cart_btn{
+    background-color: aliceblue;
+    font: inherit;
+    width: 6em;
+    margin-top: 2em;
+}
