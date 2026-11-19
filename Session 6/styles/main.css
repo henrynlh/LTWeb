@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h1 {
+    color: teal;
+}
+h2 {
+    color: teal;
+}
+label {
+    font-weight: bold;
+    float: left;
+    margin-bottom: 0.5em;
+}
+.survey-page label {
+    width: 8em;
+}
+.survey-page input[type="text"],
+.survey-page input[type="email"],
+.survey-page input[type="date"],
+select[name="contactVia"]  {
+    font-size: inherit;
+    box-sizing: border-box;
+    width: 15em;
+    height: 2em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.survey-page input[type = "submit"],
+.thank-page input[type = "submit"] {
+    font-size: inherit;
+    box-sizing: border-box;
+    width: 5em;
+    height: 2em;
+    margin-bottom: 0.5em;
+}
+br {
+    clear: both;
+}
+
+
+body.thank-page {
+    margin: 0;
+    padding: 56px 20px;
+    background: #f3f7f7;
+    color: #203434;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.thank-page .result-card {
+    box-sizing: border-box;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 36px 40px;
+    background: #fff;
+    border: 1px solid #dce7e5;
+    border-top: 4px solid #008080;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(24, 66, 61, 0.06);
+}
+.thank-page .result-eyebrow {
+    margin: 0 0 10px;
+    color: #52716d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+}
+.thank-page h1 {
+    margin: 0 0 12px;
+    color: #007c78;
+    font-size: clamp(24px, 4vw, 30px);
+    line-height: 1.25;
+}
+.thank-page .result-intro { margin: 0 0 24px; color: #61716f; }
+.thank-page .result-details { margin: 0; }
+.thank-page .result-details > div {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #edf1f0;
+}
+.thank-page dt { font-weight: 600; color: #526561; }
+.thank-page dd { margin: 0; overflow-wrap: anywhere; }
+.thank-page .result-actions { margin-top: 26px; }
+.thank-page .result-actions p { margin: 0 0 12px; color: #61716f; font-size: 14px; }
+.thank-page button {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    padding: 11px 18px;
+    border: 1px solid #007c78;
+    border-radius: 6px;
+    background: #007c78;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+.thank-page button:hover { background: #006762; }
+.thank-page button:focus-visible { outline: 3px solid #79c7bd; outline-offset: 3px; }
+@media (max-width: 480px) {
+    body.thank-page { padding: 20px 12px; }
+    .thank-page .result-card { padding: 26px 20px; }
+    .thank-page .result-details > div { grid-template-columns: 104px minmax(0, 1fr); gap: 10px; }
+}

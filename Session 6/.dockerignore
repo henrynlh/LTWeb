@@ -1,0 +1,10 @@
+WEB-INF/classes/
+*.class
+*.iml
+.env
+.env.*
+/data/
+out/
+.idea/
+.vscode/
+.git/
